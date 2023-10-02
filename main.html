@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = ru>
+<head>
+    <title>Сайт3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body class="background">
+    <div class="nameblock">
+        <p class="nameblocktext">Анкета</p>
+    </div>
+    <body>
+        <form method="POST" action="{{ url_for('form') }}">
+            <p class="question">Имя</p>
+            <input class="name" type="text" name="name1" placeholder="Введите ваше имя" onchange='eventForm(this.value)'>
+            <p class="question">Фамилия</p>
+            <input class="name" type="text" name="name2" placeholder="Введите вашу фамилию" onchange='eventForm(this.value)'>
+            <p class="question">Отчество</p>
+            <input class="name" type="text" name="name3" placeholder="Введите ваше отчество" onchange='eventForm(this.value)'>
+            <p class="question">Возраст</p>
+            <input class="name" type="text" name="name4" placeholder="Введите ваш возраст" onchange='eventForm(this.value)'>
+            <p class="question">Ваши увлечения</p>
+            <input class="name" type="text" name="name5" placeholder="Введите ваши увлечения" onchange='eventForm(this.value)'>
+            <p class="question">Что делаете когда наступает дождь?</p>
+            <input class="name" type="text" name="name6" placeholder="Введите ваши действия" onchange='eventForm(this.value)'>
+            <p class="question">В каком месяце у вас день рождения?</p>
+            <input class="name" type="text" name="name7" placeholder="Введите ваш месяц" onchange='eventForm(this.value)'>
+            <button class="buttonstyle">Отправить!</button>
+        </form>
+    </body>
+</body>
+</html>
